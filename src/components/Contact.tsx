@@ -17,12 +17,12 @@ const Contact = ({ darkMode }: ContactProps) => {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto"
         >
-          <h2 className={`text-4xl font-bold text-center mb-16 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+          <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-16 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
             Get in Touch
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h3 className={`text-2xl font-semibold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+              <h3 className={`text-xl font-semibold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
                 Contact Information
               </h3>
               <div className="space-y-6">
@@ -93,13 +93,14 @@ const Contact = ({ darkMode }: ContactProps) => {
                     }`}
                   ></textarea>
                 </div>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-full bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-3 rounded-lg font-medium"
-                >
-                  Send Message
-                </motion.button>
+               <motion.button
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-blue-500 text-white px-6 py-3 rounded-lg font-medium text-sm sm:text-base"
+>
+  Send Message
+</motion.button>
+
               </form>
             </div>
           </div>

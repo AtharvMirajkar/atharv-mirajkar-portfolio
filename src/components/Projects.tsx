@@ -78,7 +78,7 @@ const Projects = ({ darkMode }: ProjectsProps) => {
     <section className={`py-20 ${darkMode ? 'bg-gray-800' : 'bg-gray-50'}`} id="projects">
       <div className="container mx-auto px-6">
         <motion.h2 
-          className={`text-4xl font-bold text-center mb-16 ${darkMode ? 'text-white' : 'text-gray-900'}`}
+          className={`text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-16 ${darkMode ? 'text-white' : 'text-gray-900'}`}
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
