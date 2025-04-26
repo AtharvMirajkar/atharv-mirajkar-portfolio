@@ -72,7 +72,7 @@ const Hero = ({ darkMode }: HeroProps) => {
                 Get in touch
               </motion.button>
               <motion.a
-                href="https://drive.google.com/file/d/1sjxRu3YIHcKOeP-n6GpqfmrMiEEfeL7E/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1rCxH7G4DoOGTg9l6m0nVYab1P0yVqQbp/view?usp=drive_link"
                 download
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -108,13 +108,23 @@ const Hero = ({ darkMode }: HeroProps) => {
                     Experience
                   </h3>
                 </div>
-                <p
-                  className={`text-sm sm:text-base ${
-                    darkMode ? "text-gray-300" : "text-gray-700"
-                  }`}
-                >
-                  1 year at Walstar Technologies as Full Stack Developer
-                </p>
+                <div className="flex flex-col gap-1">
+                  <p
+                    className={`text-sm sm:text-base ${
+                      darkMode ? "text-gray-300" : "text-gray-700"
+                    }`}
+                  >
+                    Full Stack Developer at Walstar Technologies (2024 –
+                    Present)
+                  </p>
+                  <p
+                    className={`text-sm sm:text-base ${
+                      darkMode ? "text-gray-300" : "text-gray-700"
+                    }`}
+                  >
+                    Web Developer at Meimedian Medicare (2023 – 2024)
+                  </p>
+                </div>
               </motion.div>
 
               <motion.div
